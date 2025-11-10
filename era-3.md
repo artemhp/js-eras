@@ -70,6 +70,7 @@ When the web industry exploded with new possibilities and rapid growth.
 - Travis CI  
 - Circle CI  
 - Cloudflare  
+- Early tree-shaking experiments (Closure Compiler)  
 
 ### Culture & Workflow
 - Single Page Applications (SPAs)  

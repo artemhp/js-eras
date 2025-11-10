@@ -50,6 +50,7 @@ When front-end boundaries began to blur and developers took ownership across ful
 - Sentry  
 - LogRocket  
 - Datadog RUM  
+- SWC/ESBuild tree shaking baked into dev servers  
 
 ### Culture & Workflow
 - Meta-Frameworks  

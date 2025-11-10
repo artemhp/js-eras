@@ -50,6 +50,7 @@ Interfaces became structured, consistent, and scalable.
 - Jenkins 2.x (Pipelines as Code)  
 - Yarn  
 - Lerna  
+- webpack tree shaking + Rollup bundling  
 
 ### Culture & Workflow
 - Component-Based Architecture  
