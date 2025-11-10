@@ -6,3 +6,7 @@ Once developers trusted shared practices, they pushed further into “JavaScript
 - Google Chrome + V8 engine leap in JS performance
 - AngularJS (with Backbone/Ember) bringing MVC patterns to the client
 - npm ecosystem growth (Node, package managers) powering modular code
+
+### UI/UX Shift
+- SPAs deliver app-like navigation, cached views, and instant route changes
+- Users expect native-feeling performance, offline cues, and rich transitions inside the browser

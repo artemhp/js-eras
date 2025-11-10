@@ -7,3 +7,7 @@ Meta-frameworks and design systems gave teams incredible leverage, yet boilerpla
 - AI pair programmers (GitHub Copilot, Cursor, ChatGPT plugins) embedded in IDEs
 - Prompt-to-UI platforms (v0.dev, Galileo AI) proving natural-language design handoff
 - Autonomous QA / DevOps (Playwright + LLMs, AI-native CI/CD) shrinking feedback loops
+
+### UI/UX Shift
+- Chatbot-first patterns, agentic flows, and adaptive layouts personalize in real time
+- Users expect conversational control, multimodal input, and interfaces that anticipate intent

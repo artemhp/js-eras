@@ -7,3 +7,7 @@ Component thinking solved reusability, but front-end teams still wrestled with b
 - Tailwind CSS + design tokens powering systemized styling
 - VS Code + cloud IDE parity making advanced DX universal
 - Mobile parity (Chromium WebView, Safari PWA upgrades) proving shared engines
+
+### UI/UX Shift
+- Experiences feel consistent across desktop, mobile, and TV with shared design tokens
+- Users expect fast first paint, personalized content, and fluid navigation regardless of network or device

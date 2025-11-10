@@ -6,3 +6,7 @@ SPA-era tooling unlocked ambitious apps, but complexity exploded. The next trans
 - React + Virtual DOM redefining UI architecture
 - ES2015/TypeScript + Babel standardizing modern syntax
 - Docker and containerized pipelines enabling consistent deployments
+
+### UI/UX Shift
+- Component libraries drive consistent design systems and responsive layouts
+- Users expect seamless state syncing across devices, real-time collaboration, and polished micro-interactions
