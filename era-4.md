@@ -4,19 +4,19 @@ When modular thinking and reusable design became the foundation of the modern we
 Interfaces became structured, consistent, and scalable.
 
 ### Core Technologies
+- TypeScript 1.0  
+- ECMAScript 2015 (ES6)  
+- Babel  
 - React  
 - Angular 2+  
 - Vue  
 - Polymer  
 - Material Design  
-- ECMAScript 2015 (ES6)  
-- TypeScript 1.0  
-- Flow  
-- Babel  
 - WebAssembly  
+- Flow  
+- CSS-in-JS  
 - PostCSS  
 - Autoprefixer  
-- CSS-in-JS  
 
 ### Browsers & Engines
 - Google Chrome (V8 + Blink)  

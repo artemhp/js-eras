@@ -3,12 +3,12 @@
 When front-end boundaries began to blur and developers took ownership across full-stack and performance.
 
 ### Core Technologies
+- TypeScript (default)  
+- React Server Components  
 - Next.js  
 - Remix  
 - Svelte  
 - Astro  
-- React Server Components  
-- TypeScript (default)  
 - WebAssembly (Wasm)  
 - JS Tooling in Native (Rust, Go, Zig)  
 - Deno  

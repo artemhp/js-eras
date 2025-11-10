@@ -4,13 +4,13 @@ When the web tried to become dynamic, but everyone built it their own way.
 Innovation moved fast, standards were unclear, and every site had its own rules and solutions.
 
 ### Core Technologies
+- JavaScript  
 - HTML 4  
 - CSS 2  
-- JavaScript  
 - DHTML  
+- Flash  
 - ActiveX  
 - Java Applets  
-- Flash  
 
 ### Browsers & Engines
 - Netscape Navigator  

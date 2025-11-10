@@ -6,9 +6,9 @@ Collaboration and community-driven ideas replaced isolated experimentation.
 ### Core Technologies
 - AJAX  
 - JSON  
+- jQuery  
 - Prototype.js  
 - Dojo Toolkit  
-- jQuery  
 - YUI (Yahoo UI Library)  
 - Ext JS  
 - Polyfills  

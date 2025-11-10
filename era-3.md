@@ -3,20 +3,20 @@
 When the web industry exploded with new possibilities and rapid growth.
 
 ### Core Technologies
-- Backbone.js  
 - AngularJS  
+- Backbone.js  
 - Ember.js  
 - Knockout.js  
-- Bootstrap  
+- Node  
+- NPM  
+- Express.js  
+- Meteor  
 - HTML5  
 - CSS3  
 - SCSS  
 - LESS  
 - CoffeeScript  
-- Node  
-- NPM  
-- Express.js  
-- Meteor  
+- Bootstrap  
 
 ### Browsers & Engines
 - Google Chrome  
