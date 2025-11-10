@@ -15,4 +15,5 @@ Component thinking solved reusability, but front-end teams still wrestled with b
 ### DX Highlights
 - Next.js full-stack routing — narrows front-end/back-end gap
 - Nx / Turborepo — shared builds for large monorepos
+- CLI generators (Next, Remix, SvelteKit) — instant scaffolds
 - GitHub Actions — turnkey previews and CI

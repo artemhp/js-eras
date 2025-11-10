@@ -15,3 +15,4 @@ Meta-frameworks and design systems gave teams incredible leverage, yet boilerpla
 ### DX Highlights
 - GitHub Copilot / Cursor — AI pair programming
 - AI-native CI/CD — automated QA, infra, and reviews
+- Prompt-driven CLIs — component templates via natural language

@@ -13,4 +13,5 @@ SPA-era tooling unlocked ambitious apps, but complexity exploded. The next trans
 
 ### DX Highlights
 - webpack + Yarn — consistent module build chain
+- create-react-app CLI — zero-config component scaffolding
 - Docker Compose — reproducible dev/stage environments

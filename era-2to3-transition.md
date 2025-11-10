@@ -15,4 +15,5 @@ Once developers trusted shared practices, they pushed further into “JavaScript
 ### DX Highlights
 - npm + Grunt — automated build steps
 - Closure/Uglify plugins — optimization baked into pipelines
+- Yeoman CLI — scaffolding for SPA boilerplate
 - GitHub PRs — normalized distributed code review
