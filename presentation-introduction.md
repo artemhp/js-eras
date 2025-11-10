@@ -1,19 +1,19 @@
 # New Introduction Draft
 
-**Slide 1 – Hook (robot vs. dev visual, 5s)**
-“Good morning! Lately I keep hearing the same question: ‘Is AI about to end front-end development?’ If that thought has kept you up at night, you’re in good company.”
+**Slide 1 – Hook (room photo + PhillyJS logo)**
+“Welcome to PhillyJS! Thank you for coming out—seeing this many people tells me the topic is hitting a nerve. AI excites a lot of us, but it also scares many of us. It can ship code, fuel no-code tools so non-tech folks ship features, even replace the late-night coding sessions we love.”
 
-**Slide 2 – Reframe (question on screen)**
-“But we’ve been here before. WYSIWYG editors, Ajax, jQuery, SPAs—every new wave felt like it might replace us, and every time we learned how to ride it.”
+**Slide 2 – Grounding (news headline collage)**
+“Yes, that’s happening. The industry is moving fast, headlines are loud, and it’s easy to react instead of analyze. As developers with analytical mindsets, we owe it to ourselves to slow down, look at the data, and make our own conclusions.”
 
-**Slide 3 – Thesis (timeline teaser)**
-“My take is simple: AI isn’t a break, it’s the next step. It boosts what we already do best—creative problem solving, adapting fast, and building great experiences—not just typing code.”
+**Slide 3 – History Lens (timeline teaser)**
+“My favorite way to do that is a retrospective. I’m a history nerd—U.S., Europe, and of course Ukraine. The world feels chaotic right now: wars, conflicts, shaky economies. The only way I stay grounded is by studying patterns.”
 
-**Slide 4 – Stakes (stat or quote)**
-“And there’s urgency. Each era left people behind: the table-layout crowd, the folks who skipped the build step, the ones who never left ES5. This wave is faster, so leaning in now matters.”
+**Slide 4 – Quotes (wall of quotes)**
+“Those patterns keep showing up. ‘Those who cannot remember the past are condemned to repeat it.’ ‘History repeats itself, first as tragedy, second as farce.’ ‘What has been will be again.’ ‘History doesn’t repeat itself, but it often rhymes.’ These lines hit harder when you watch tech cycles.”
 
-**Slide 5 – Roadmap + Disclaimer (eras list)**
-“We’ll spend the next 45 minutes walking through six eras—from handwritten HTML to AI-generated UI. This timeline is my own lens, not an official history. Some boxes will be yellow: those are tools I know from the outside but haven’t mastered yet.”
+**Slide 5 – Thesis & Roadmap (eras list)**
+“So tonight we’ll look at six eras of front-end—from handwritten HTML to AI-generated UI—and see how history is rhyming again. This is my lens, not an official record. I’ll mark a few boxes in yellow when it’s a tool I know more by study than by daily use.”
 
-**Slide 6 – Credibility & Invitation**
-“I’m Artem Deikun, and I want this to be interactive. After each era slide, feel free to cheer, disagree, or call out a tech that’s missing or misplaced. I’m more than happy to explain why it’s there, tell the story behind it, or admit when it’s just something I’m still learning. Positive, negative, or just curious—bring the feedback.”
+**Slide 6 – Invitation**
+“I’m Artem Deikun. After each era slide, jump in—positive, negative, or just curious. If you want to challenge why a technology is on the list or hear the story behind it, I’m more than happy to share. Let’s learn the past together so we can build the next chapter on purpose.”
