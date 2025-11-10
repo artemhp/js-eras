@@ -57,6 +57,6 @@ When front-end boundaries began to blur and developers took ownership across ful
 - DX mindset  
 
 ### Influencers
-- Rich Harris  
-- Guillermo Rauch  
-- Fred K. Schott  
+- Rich Harris (Svelte)  
+- Guillermo Rauch (Vercel, Next.js)  
+- Fred K. Schott (Astro)  

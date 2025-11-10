@@ -56,6 +56,6 @@ Interfaces became structured, consistent, and scalable.
 - Pair Programming  
 
 ### Influencers
-- Dan Abramov  
-- Jordan Walke  
-- Evan You  
+- Dan Abramov (Redux, React)  
+- Jordan Walke (React)  
+- Evan You (Vue.js)  

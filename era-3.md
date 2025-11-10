@@ -75,8 +75,8 @@ When the web industry exploded with new possibilities and rapid growth.
 - The "Build Step"  
 
 ### Influencers
-- Ryan Dahl  
-- Lars Bak  
-- Isaac Schlueter  
-- Paul Irish  
-- Jeremy Ashkenas  
+- Ryan Dahl (Node.js)  
+- Lars Bak (V8 Engine)  
+- Isaac Schlueter (npm)  
+- Paul Irish (Google Chrome)  
+- Jeremy Ashkenas (Backbone, CoffeeScript)  

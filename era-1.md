@@ -43,10 +43,10 @@ Innovation moved fast, standards were unclear, and every site had its own rules 
 - Manual cross-browser testing  
 
 ### Influencers
-- Brendan Eich  
-- Douglas Crockford  
-- Tim Berners-Lee  
-- Bill Gates  
-- Bert Bos  
-- Jeffrey Zeldman  
-- Dave Shea  
+- Brendan Eich (JavaScript, Mozilla)  
+- Douglas Crockford (JSON, Yahoo!)  
+- Tim Berners-Lee (W3C, World Wide Web)  
+- Bill Gates (Microsoft)  
+- Bert Bos (CSS, W3C)  
+- Jeffrey Zeldman (Web Standards Project)  
+- Dave Shea (CSS Zen Garden)  

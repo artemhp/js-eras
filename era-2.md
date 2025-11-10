@@ -50,9 +50,9 @@ Collaboration and community-driven ideas replaced isolated experimentation.
 - Progressive Enhancement  
 
 ### Influencers
-- John Resig  
-- Alex Russell  
-- David Heinemeier Hansson (DHH)  
-- Nicholas Zakas  
-- Thomas Sha & Nate Koechley  
-- Douglas Crockford  
+- John Resig (jQuery)  
+- Alex Russell (Dojo, Web Components)  
+- David Heinemeier Hansson (Ruby on Rails)  
+- Nicholas Zakas (Yahoo! Performance)  
+- Thomas Sha & Nate Koechley (Yahoo! Front-End)  
+- Douglas Crockford (JSON, JavaScript)  
