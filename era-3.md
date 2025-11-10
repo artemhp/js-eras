@@ -48,6 +48,7 @@ When the web industry exploded with new possibilities and rapid growth.
 - WebStorm  
 - PHPStorm  
 - Brackets  
+- Emmet (Zen Coding)  
 
 ### DevTools & Debugging
 - Firebug  

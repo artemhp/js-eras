@@ -37,6 +37,7 @@ When front-end boundaries began to blur and developers took ownership across ful
 - Svelte Inspector  
 - Playwright  
 - Cypress  
+- Prettier  
 
 ### Infrastructure
 - Vite  
