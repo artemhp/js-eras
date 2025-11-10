@@ -14,4 +14,3 @@ The colonization phase proved the web could share documents, but everything was 
 
 ### DX Highlights
 - View Source — first shared debugging tool
-- CGI scripts — simple dynamic deploy pipeline
