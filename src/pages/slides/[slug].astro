@@ -208,8 +208,9 @@ const isEraSlide = slide.data.category === 'era';
 	}
 
 	.slide-view--era :global(.era-panels) {
-		column-width: 260px;
-		column-gap: 1.25rem;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+		gap: 1rem;
 		margin-top: 0.75rem;
 	}
 
@@ -222,12 +223,10 @@ const isEraSlide = slide.data.category === 'era';
 		display: flex;
 		flex-direction: column;
 		gap: 0.35rem;
-		break-inside: avoid;
-		margin-bottom: 1rem;
 	}
 
 	.slide-view--era :global(.era-panel--wide) {
-		width: 100%;
+		grid-column: span 2;
 	}
 
 	.slide-view--era :global(.era-panel h3) {
@@ -278,7 +277,7 @@ const isEraSlide = slide.data.category === 'era';
 		}
 
 		.slide-view--era :global(.era-panels) {
-			column-width: auto;
+			grid-template-columns: 1fr;
 		}
 	}
 </style>
