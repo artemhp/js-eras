@@ -49,13 +49,13 @@ const firstSlideSlug = slides[0]?.slug ?? '';
 			</div>
 		</section>
 
-			<section class="presentation" id="timeline">
-				<nav class="timeline" aria-label="Presentation timeline">
+		<section class="presentation" id="timeline">
+			<nav class="timeline" aria-label="Presentation timeline">
 				<h2>Timeline</h2>
 				<ol>
 					{navItems.map((entry) => (
 						<li>
-							<a href={`#${entry.slug}`} class={`timeline__link timeline__link--${entry.data.category}`}>
+							<a href={`/slides/${entry.slug}`} class={`timeline__link timeline__link--${entry.data.category}`}>
 								<span class="timeline__order">{String(entry.data.order).padStart(2, '0')}</span>
 								<span class="timeline__title">{entry.data.title}</span>
 							</a>
@@ -77,6 +77,11 @@ const firstSlideSlug = slides[0]?.slug ?? '';
 						</div>
 						<div class="slide-card__body">
 							<slide.Content />
+						</div>
+						<div class="slide-card__footer">
+							<a class="slide-card__link" href={`/slides/${slide.slug}`}>
+								View slide →
+							</a>
 						</div>
 						{slide.data.tags && slide.data.tags.length > 0 && (
 							<div class="slide-card__tags" aria-label="Suggested tags">
@@ -283,6 +288,25 @@ const firstSlideSlug = slides[0]?.slug ?? '';
 
 	.slide-card__body :global(*:first-child) {
 		margin-top: 0;
+	}
+
+	.slide-card__footer {
+		display: flex;
+		justify-content: flex-end;
+		margin-top: 0.75rem;
+	}
+
+	.slide-card__link {
+		font-size: 0.85rem;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: var(--color-accent);
+		border-bottom: 1px solid transparent;
+		padding-bottom: 0.1rem;
+	}
+
+	.slide-card__link:hover {
+		border-color: currentColor;
 	}
 
 	.slide-card__body :global(h1),
