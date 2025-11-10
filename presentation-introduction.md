@@ -1,13 +1,19 @@
 # New Introduction Draft
 
-**(Start with a slide that is intentionally provocative. It could show a robot arm typing at a keyboard, with a human developer looking worried in the background. Or simply the question: "Is AI the end of front-end development?")**
+**Slide 1 – Hook (robot vs. dev visual, 5s)**
+“Good morning! Lately I keep hearing the same question: ‘Is AI about to end front-end development?’ If that thought has kept you up at night, you’re in good company.”
 
-"Good morning. Everyone's talking about AI, and it's natural to wonder: Will AI take over front-end development? Will our skills become useless? I understand these concerns, but I want to show you a different way to look at it.
+**Slide 2 – Reframe (question on screen)**
+“But we’ve been here before. WYSIWYG editors, Ajax, jQuery, SPAs—every new wave felt like it might replace us, and every time we learned how to ride it.”
 
-My belief is simple: the current AI era isn't a radical break, but a powerful evolution. It will make our work as front-end developers even more engaging and valuable, because the true value we bring has never been just about writing lines of code. It's always been about creativity, adaptability, and crafting exceptional user experiences.
+**Slide 3 – Thesis (timeline teaser)**
+“My take is simple: AI isn’t a break, it’s the next step. It boosts what we already do best—creative problem solving, adapting fast, and building great experiences—not just typing code.”
 
-And let me be clear: AI is not hype. It's crucial for us to adopt. In every era of software development, some technologies and developers get left behind. My hope is that by spending the next 45 minutes on a retrospective of web development from the late 90s to today, we can understand the patterns of change and ensure we're the ones moving forward.
+**Slide 4 – Stakes (stat or quote)**
+“And there’s urgency. Each era left people behind: the table-layout crowd, the folks who skipped the build step, the ones who never left ES5. This wave is faster, so leaning in now matters.”
 
-My name is Artem Deikun, and together we're going to trace the 'Ages of JavaScript' to see how our quest for better tools has led us to this moment. By understanding our history, we can confidently embrace the AI era not as an ending, but as the most exciting new chapter in our story.
+**Slide 5 – Roadmap + Disclaimer (eras list)**
+“We’ll spend the next 45 minutes walking through six eras—from handwritten HTML to AI-generated UI. This timeline is my own lens, not an official history. Some boxes will be yellow: those are tools I know from the outside but haven’t mastered yet.”
 
-Finally, this talk is my personal take on our industry's journey, and I encourage you to engage, agree, or even strongly disagree during our Q&A."
+**Slide 6 – Credibility & Invitation**
+“I’m Artem Deikun, and I want this to be interactive. After each era slide, feel free to cheer, disagree, or call out a tech that’s missing or misplaced. I’m more than happy to explain why it’s there, tell the story behind it, or admit when it’s just something I’m still learning. Positive, negative, or just curious—bring the feedback.”
