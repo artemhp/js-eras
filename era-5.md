@@ -55,6 +55,7 @@ When front-end boundaries began to blur and developers took ownership across ful
 - Jamstack  
 - SSR & SSG as defaults  
 - DX mindset  
+- One codebase spans web, mobile, and TV surfaces  
 
 ### Influencers
 - Rich Harris (Svelte)  

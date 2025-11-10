@@ -7,6 +7,7 @@ When the web industry exploded with new possibilities and rapid growth.
 - Backbone.js  
 - Ember.js  
 - Knockout.js  
+- Hybrid Mobile (PhoneGap, Cordova, Sencha Touch)  
 - Node  
 - NPM  
 - Express.js  
@@ -73,6 +74,7 @@ When the web industry exploded with new possibilities and rapid growth.
 - Single Page Applications (SPAs)  
 - "JavaScript Everywhere"  
 - The "Build Step"  
+- Hybrid mobile apps prove the web can ship on phones and TVs  
 
 ### Influencers
 - Ryan Dahl (Node.js)  

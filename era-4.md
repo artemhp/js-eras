@@ -10,6 +10,7 @@ Interfaces became structured, consistent, and scalable.
 - React  
 - Angular 2+  
 - Vue  
+- React Native & NativeScript  
 - Polymer  
 - Material Design  
 - WebAssembly  
@@ -54,6 +55,7 @@ Interfaces became structured, consistent, and scalable.
 - State Management (e.g., Flux/Redux, Vuex)  
 - Declarative Programming  
 - Pair Programming  
+- Web tech powers native shells on mobile and living-room screens  
 
 ### Influencers
 - Dan Abramov (Redux, React)  
