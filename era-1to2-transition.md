@@ -13,5 +13,5 @@ Era 1 sites were interactive but fragile; every team inventing its own patterns 
 - Sections of a page refresh independently
 
 ### DX Highlights
-- Firebug and early debugger toolbars bring live inspection
-- Shared snippets/plugins replace one-off browser hacks
+- Firebug — live DOM/CSS inspection
+- jQuery plugins — reusable fixes for browser quirks

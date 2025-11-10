@@ -13,5 +13,5 @@ The colonization phase proved the web could share documents, but everything was 
 - Basic animations make pages feel alive
 
 ### DX Highlights
-- “View Source” becomes the de facto learning tool
-- Simple CGI scripts introduce basic dynamic deployments
+- View Source — first shared debugging tool
+- CGI scripts — simple dynamic deploy pipeline

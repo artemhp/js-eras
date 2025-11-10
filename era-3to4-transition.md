@@ -12,5 +12,5 @@ SPA-era tooling unlocked ambitious apps, but complexity exploded. The next trans
 - Micro-interactions and real-time collaboration feel polished
 
 ### DX Highlights
-- Yarn/webpack pipelines replace ad-hoc build chains
-- Docker Compose and CI pipelines bring reproducible environments
+- webpack + Yarn — consistent module build chain
+- Docker Compose — reproducible dev/stage environments

@@ -13,5 +13,5 @@ Once developers trusted shared practices, they pushed further into “JavaScript
 - Transitions feel fluid and app-like
 
 ### DX Highlights
-- npm scripts + Grunt automate build steps
-- GitHub pull requests normalize distributed code review
+- npm + Grunt — automated build steps
+- GitHub PRs — normalized distributed code review
