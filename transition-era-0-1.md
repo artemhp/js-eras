@@ -8,4 +8,6 @@ The colonization phase proved the web could share documents, but everything was 
 - Early event-driven UI patterns (rollovers, form validation)
 
 ### UI/UX Shift
-- Static docs gain hover states, inline validation, and light animation
+- Hover states and link rollovers add motion
+- Inline validation reduces failed submissions
+- Basic animations make pages feel alive

@@ -9,4 +9,5 @@ Component thinking solved reusability, but front-end teams still wrestled with b
 - Mobile parity (Chromium WebView, Safari PWA upgrades) proving shared engines
 
 ### UI/UX Shift
-- Shared design tokens keep web/mobile/TV aligned with instant, personalized loads
+- Shared design tokens align web, mobile, and TV
+- First paint is nearly instant, content personalizes quickly

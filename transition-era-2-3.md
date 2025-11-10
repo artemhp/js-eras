@@ -8,4 +8,6 @@ Once developers trusted shared practices, they pushed further into “JavaScript
 - npm ecosystem growth (Node, package managers) powering modular code
 
 ### UI/UX Shift
-- SPAs bring native-like speed, cached routes, and fluid transitions
+- Native-like speed for navigation
+- Routes and data cached locally
+- Transitions feel fluid and app-like

@@ -9,4 +9,5 @@ Meta-frameworks and design systems gave teams incredible leverage, yet boilerpla
 - Autonomous QA / DevOps (Playwright + LLMs, AI-native CI/CD) shrinking feedback loops
 
 ### UI/UX Shift
-- Conversational, agentic UIs personalize in real time and anticipate intent
+- Conversational and agentic patterns dominate
+- Layouts adapt in real time based on intent

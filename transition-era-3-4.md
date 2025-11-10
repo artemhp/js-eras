@@ -8,4 +8,5 @@ SPA-era tooling unlocked ambitious apps, but complexity exploded. The next trans
 - Docker and containerized pipelines enabling consistent deployments
 
 ### UI/UX Shift
-- Component libraries deliver consistent design systems and polished micro-interactions
+- Component libraries enforce consistent design systems
+- Micro-interactions and real-time collaboration feel polished
