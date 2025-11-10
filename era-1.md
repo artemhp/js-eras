@@ -3,7 +3,7 @@
 When the web tried to become dynamic, but everyone built it their own way.  
 Innovation moved fast, standards were unclear, and every site had its own rules and solutions.
 
-### Technologies
+### Core Technologies
 - HTML 4  
 - CSS 2  
 - JavaScript  
@@ -12,7 +12,7 @@ Innovation moved fast, standards were unclear, and every site had its own rules 
 - Java Applets  
 - Flash  
 
-### Browsers
+### Browsers & Engines
 - Netscape Navigator  
 - Internet Explorer  
 - Opera  
@@ -20,24 +20,15 @@ Innovation moved fast, standards were unclear, and every site had its own rules 
 - Safari  
 - Konqueror  
 
-### Tools of Development
+### Tooling & IDEs
 - Notepad / Notepad++  
 - Microsoft FrontPage  
 - Macromedia Dreamweaver  
 
-### Dev Tools
+### DevTools & Debugging
 - No integrated DevTools  
 - `alert()`  
 - Mozilla DOM Inspector  
-
-### Influencers
-- Brendan Eich  
-- Douglas Crockford  
-- Tim Berners-Lee  
-- Bill Gates  
-- Bert Bos  
-- Jeffrey Zeldman  
-- Dave Shea  
 
 ### Infrastructure
 - Apache HTTP Server  
@@ -50,3 +41,12 @@ Innovation moved fast, standards were unclear, and every site had its own rules 
 - Flash intros and GIF banners  
 - “Best viewed in Internet Explorer” badges  
 - Manual cross-browser testing  
+
+### Influencers
+- Brendan Eich  
+- Douglas Crockford  
+- Tim Berners-Lee  
+- Bill Gates  
+- Bert Bos  
+- Jeffrey Zeldman  
+- Dave Shea  

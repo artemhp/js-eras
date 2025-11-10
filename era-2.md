@@ -3,7 +3,7 @@
 When developers began uniting around shared practices and standards.  
 Collaboration and community-driven ideas replaced isolated experimentation.
 
-### Technologies
+### Core Technologies
 - AJAX  
 - JSON  
 - Prototype.js  
@@ -14,29 +14,25 @@ Collaboration and community-driven ideas replaced isolated experimentation.
 - Polyfills  
 - Ruby on Rails  
 
-### Browsers
+### Browsers & Engines
 - Internet Explorer 7  
 - Mozilla Firefox  
 - Safari  
 - Opera  
 
-### Development and Debug Tools
-- TextMate, Notepad++  
-- Dreamweaver MX, Microsoft Visual Studio  
+### Tooling & IDEs
+- TextMate  
+- Notepad++  
+- Dreamweaver MX  
+- Microsoft Visual Studio  
+
+### DevTools & Debugging
 - Firebug  
 - IE Developer Toolbar  
 - Safari Web Inspector  
 - Opera Dragonfly  
 - Page Speed  
 - YUI Profiler & Logger  
-
-### Influencers
-- John Resig  
-- Alex Russell  
-- David Heinemeier Hansson (DHH)  
-- Nicholas Zakas  
-- Thomas Sha & Nate Koechley  
-- Douglas Crockford  
 
 ### Infrastructure
 - Nginx  
@@ -52,3 +48,11 @@ Collaboration and community-driven ideas replaced isolated experimentation.
 - Design-to-code workflow  
 - CDN and optimization mindset  
 - Progressive Enhancement  
+
+### Influencers
+- John Resig  
+- Alex Russell  
+- David Heinemeier Hansson (DHH)  
+- Nicholas Zakas  
+- Thomas Sha & Nate Koechley  
+- Douglas Crockford  

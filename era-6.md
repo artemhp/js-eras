@@ -3,46 +3,44 @@
 When intelligence becomes a core part of how digital products are created.  
 Developers collaborate with AI to build, test, and design in entirely new ways.
 
-### Browsers
-- The Agentic Browser
-- Generative Capabilities
-- Deep OS & AI Integration
-- Natural Language Control
+### Core Technologies
+- Generative UI Frameworks (e.g., v0.dev)  
+- AI-Native State Management  
+- Self-Healing Codebases  
+- Multi-Modal Interfaces (Voice, Gestures)  
+- Prompt Engineering  
+- LLM-driven APIs  
+- Prompt-to-UI Generation  
+- AI-Driven Accessibility  
+- Real-time Personalization  
 
-### Technologies & Frameworks
-- Generative UI Frameworks (e.g., v0.dev)
-- AI-Native State Management
-- Self-Healing Codebases
-- Multi-Modal Interfaces (Voice, Gestures)
+### Browsers & Engines
+- The Agentic Browser  
+- Generative Capabilities  
+- Deep OS & AI Integration  
+- Natural Language Control  
 
-### The New Stack
-- Prompt Engineering
-- LLM-driven APIs
-- AI Validation & Guardrails
+### Tooling & IDEs
+- Fully Agentic IDEs  
+- Natural Language Interface  
+- Design-to-Code Automation  
 
-### Infrastructure & AI-Powered DevOps
-- AI-Native CI/CD
-- Autonomous A/B Testing
-- Generative Infrastructure (IaC via NL)
+### DevTools & Debugging
+- AI Validation & Guardrails  
+- Autonomous A/B Testing  
 
-### Styling and UX
-- Prompt-to-UI Generation
-- AI-Driven Accessibility
-- Real-time Personalization
-
-### Influencers
-- Sam Altman (OpenAI)
-- Demis Hassabis (Google DeepMind)
-- Jensen Huang (NVIDIA)
-- Aidan Gomez (Cohere)
-
-### IDE and Editors
-- Fully Agentic IDEs
-- Natural Language Interface
-- Design-to-Code Automation
+### Infrastructure
+- AI-Native CI/CD  
+- Generative Infrastructure (IaC via NL)  
 
 ### Culture & Workflow
-- Developer as "Reviewer"
-- Human-AI Pairing
-- Death of Boilerplate
-- Focus on Architecture & Product
+- Developer as "Reviewer"  
+- Human-AI Pairing  
+- Death of Boilerplate  
+- Focus on Architecture & Product  
+
+### Influencers
+- Sam Altman (OpenAI)  
+- Demis Hassabis (Google DeepMind)  
+- Jensen Huang (NVIDIA)  
+- Aidan Gomez (Cohere)  
