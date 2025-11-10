@@ -10,3 +10,7 @@ SPA-era tooling unlocked ambitious apps, but complexity exploded. The next trans
 ### UI/UX Shift
 - Component libraries enforce consistent design systems
 - Micro-interactions and real-time collaboration feel polished
+
+### DX Highlights
+- Yarn/webpack pipelines replace ad-hoc build chains
+- Docker Compose and CI pipelines bring reproducible environments

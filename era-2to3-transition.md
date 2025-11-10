@@ -11,3 +11,7 @@ Once developers trusted shared practices, they pushed further into “JavaScript
 - Native-like speed for navigation
 - Routes and data cached locally
 - Transitions feel fluid and app-like
+
+### DX Highlights
+- npm scripts + Grunt automate build steps
+- GitHub pull requests normalize distributed code review

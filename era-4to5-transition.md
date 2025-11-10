@@ -11,3 +11,7 @@ Component thinking solved reusability, but front-end teams still wrestled with b
 ### UI/UX Shift
 - Shared design tokens align web, mobile, and TV
 - First paint is nearly instant, content personalizes quickly
+
+### DX Highlights
+- Monorepo tools (Nx, Turborepo) accelerate multi-app workflows
+- GitHub Actions / GitLab CI provide turnkey pipelines and previews

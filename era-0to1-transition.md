@@ -11,3 +11,7 @@ The colonization phase proved the web could share documents, but everything was 
 - Hover states and link rollovers add motion
 - Inline validation reduces failed submissions
 - Basic animations make pages feel alive
+
+### DX Highlights
+- “View Source” becomes the de facto learning tool
+- Simple CGI scripts introduce basic dynamic deployments

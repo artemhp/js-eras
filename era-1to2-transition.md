@@ -11,3 +11,7 @@ Era 1 sites were interactive but fragile; every team inventing its own patterns 
 - Inline updates replace full reloads
 - Forms remember state across interactions
 - Sections of a page refresh independently
+
+### DX Highlights
+- Firebug and early debugger toolbars bring live inspection
+- Shared snippets/plugins replace one-off browser hacks

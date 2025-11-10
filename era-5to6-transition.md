@@ -11,3 +11,7 @@ Meta-frameworks and design systems gave teams incredible leverage, yet boilerpla
 ### UI/UX Shift
 - Conversational and agentic patterns dominate
 - Layouts adapt in real time based on intent
+
+### DX Highlights
+- AI copilots draft code, tests, and documentation
+- Autonomous QA and AI-native CI pipelines cut review cycles
