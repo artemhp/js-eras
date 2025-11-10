@@ -8,5 +8,4 @@ Era 1 sites were interactive but fragile; every team inventing its own patterns 
 - jQuery (with Prototype/Dojo) smoothing cross-browser DOM work
 
 ### UI/UX Shift
-- Interfaces evolve from page refreshes to “live” views where data updates without reloads
-- Users expect forms, maps, and feeds to remember state and react instantly across browsers
+- Pages feel live: data refreshes inline, forms remember state, maps move without reloads
