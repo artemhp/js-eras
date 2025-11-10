@@ -29,7 +29,13 @@ const isEraSlide = slide.data.category === 'era';
 ---
 
 <Layout title={`${slide.data.title} — ${presentationTitle}`}>
-	<main class="slide-shell" data-slug={slide.slug} data-next={nextHref ?? ''} data-prev={prevHref ?? ''}>
+	<main
+		class="slide-shell"
+		data-base={Astro.site?.pathname ?? '/'}
+		data-slug={slide.slug}
+		data-next={nextHref ?? ''}
+		data-prev={prevHref ?? ''}
+	>
 		<header class="slide-bar">
 			<div class="slide-bar__meta">
 				<p class="slide-bar__eyebrow">{presentationTitle} · Artem Deikun</p>
@@ -51,15 +57,18 @@ const isEraSlide = slide.data.category === 'era';
 
 	<script is:inline>
 		const shell = document.querySelector('.slide-shell');
-		const navTargets = {
-			next: shell?.dataset.next || null,
-			prev: shell?.dataset.prev || null
-		};
+	const base = shell?.dataset.base || '/';
+	const navTargets = {
+		next: shell?.dataset.next || null,
+		prev: shell?.dataset.prev || null
+	};
 
-		function goTo(link) {
-			if (!link) return;
-			window.location.href = link;
-		}
+	function goTo(link) {
+		if (!link) return;
+		const normalizedBase = base.endsWith('/') ? base.slice(0, -1) : base;
+		const normalizedLink = link.startsWith('/') ? link : `/${link}`;
+		window.location.href = `${normalizedBase}${normalizedLink}`;
+	}
 
 		document.addEventListener('keydown', (event) => {
 			const key = event.key;
