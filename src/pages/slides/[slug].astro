@@ -210,6 +210,7 @@ const isEraSlide = slide.data.category === 'era';
 	.slide-view--era :global(.era-panels) {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+		grid-auto-flow: row dense;
 		gap: 1rem;
 		margin-top: 0.75rem;
 	}
@@ -223,6 +224,8 @@ const isEraSlide = slide.data.category === 'era';
 		display: flex;
 		flex-direction: column;
 		gap: 0.35rem;
+		align-self: flex-start;
+		height: auto;
 	}
 
 	.slide-view--era :global(.era-panel--wide) {
@@ -278,6 +281,10 @@ const isEraSlide = slide.data.category === 'era';
 
 		.slide-view--era :global(.era-panels) {
 			grid-template-columns: 1fr;
+		}
+
+		.slide-view--era :global(.era-panel--wide) {
+			grid-column: span 1;
 		}
 	}
 </style>
