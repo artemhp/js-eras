@@ -2,14 +2,16 @@
 
 **(Transition to a summary slide that visually represents the evolution, perhaps showing the journey from simple HTML to complex frameworks, and then to an AI-assisted UI creation process.)**
 
-"So, we've seen how front-end development has always been changing. From the early days to the age of frameworks, and now to AI, one thing is clear: things are always evolving.
+"So here’s where we landed. The handwritten era taught us craft. The standards era taught us to collaborate. The framework and component eras taught us to systemize. The progressive era blurred the stack. And the AI era? It’s asking us to become conductors—guiding intelligent tools instead of wrestling with boilerplate.
 
-Today, it's more important than ever to keep learning. The changes happening now with AI are even bigger and faster than the old browser wars. But that's not scary—it's exciting! We get to learn completely new things, not just about code, but about new areas like AI. And what's really cool is that we never know what's coming next.
+Every time we faced a shift, the teams who stayed curious won. This wave is faster, but the pattern is the same: learn, experiment, share. That’s why I say we’re moving from pure coding to true creating.
 
-For all of us as developers, this is great news. AI gives us tools to be more productive and to build things faster, from idea to finished project. This means we can spend more time on what really matters: making great experiences for our users. **We are entering an era not of *coding*, but of *creating*, as we usually were as front-end developers.**
+Here are two concrete things to try next:
+1. Pick one AI-assisted UI tool—v0.dev, Galileo, whatever sparks interest—and build a tiny component with it this week. See what it’s good at and where you still need to steer it.
+2. Audit one part of your workflow for automation. Maybe it’s writing tests, maybe it’s documenting design tokens. If a model can draft the boring parts, let it, and reinvest that time in user experience.
 
-So, let's be open to this new chapter. Keep learning, keep building, and have fun with it.
+Do that, share what you learn, and we’ll keep the craft alive even as the tools change.
 
-Thank you, and good luck."
+Thank you for being here. I can’t wait to hear your stories and feedback."
 
 **(Display a final slide with your name, contact information, and a link to the presentation slides.)**
