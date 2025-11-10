@@ -1,6 +1,6 @@
 ---
 title: "Era 3 — The Gold Rush (2008–2012)"
-order: 8
+order: 13
 category: "era"
 ---
 

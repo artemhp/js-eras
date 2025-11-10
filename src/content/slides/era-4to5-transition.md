@@ -1,6 +1,6 @@
 ---
 title: "Era 4 → Era 5 — From Components to Full-Stack Experience Platforms"
-order: 11
+order: 16
 category: "transition"
 ---
 

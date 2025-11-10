@@ -1,6 +1,6 @@
 ---
 title: "Era 2 → Era 3 — From Standards to Full Web Applications"
-order: 7
+order: 12
 category: "transition"
 ---
 

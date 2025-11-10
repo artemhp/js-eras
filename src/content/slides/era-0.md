@@ -1,6 +1,6 @@
 ---
 title: "Era 0 — Colonization of the Web (1991–1996)"
-order: 2
+order: 7
 category: "era"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "History Quotes"
-order: 15
+order: 20
 category: "interlude"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Era 3 → Era 4 — From Frameworks to Components at Scale"
-order: 9
+order: 14
 category: "transition"
 ---
 

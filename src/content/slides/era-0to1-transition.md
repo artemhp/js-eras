@@ -1,6 +1,6 @@
 ---
 title: "Era 0 → Era 1 — From Static Pages to Interactive Web"
-order: 3
+order: 8
 category: "transition"
 ---
 

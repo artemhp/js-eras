@@ -2,7 +2,7 @@
 title: "Upcoming Talk: JavaScript Through the Ages at PhillyJS!"
 date: "2025-11-13" # Assuming today is Nov 9, 2025, Thursday would be Nov 13.
 tags: ["JavaScript", "Frontend", "AI", "WebDevelopment", "PhillyJS", "TechTalk"]
-order: 17
+order: 22
 category: "bonus"
 ---
 

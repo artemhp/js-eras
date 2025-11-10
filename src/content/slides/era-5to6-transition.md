@@ -1,6 +1,6 @@
 ---
 title: "Era 5 → Era 6 — From Meta-Frameworks to AI-Native Creation"
-order: 13
+order: 18
 category: "transition"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Era 6 — The AI Age (2025–Future)"
-order: 14
+order: 19
 category: "era"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Era 1 → Era 2 — From Hand-Rolled Hacks to Shared Standards"
-order: 5
+order: 10
 category: "transition"
 ---
 
