@@ -36,7 +36,7 @@ const firstSlideSlug = slides[0]?.slug ?? '';
 			</p>
 			<div class="hero__actions">
 				{firstSlideSlug && (
-					<a class="hero__button" href={`/slides/${firstSlideSlug}`}>
+					<a class="hero__button" href={`slides/${firstSlideSlug}`}>
 						Start presentation
 					</a>
 				)}
@@ -55,7 +55,7 @@ const firstSlideSlug = slides[0]?.slug ?? '';
 				<ol>
 					{navItems.map((entry) => (
 						<li>
-							<a href={`/slides/${entry.slug}`} class={`timeline__link timeline__link--${entry.data.category}`}>
+							<a href={`slides/${entry.slug}`} class={`timeline__link timeline__link--${entry.data.category}`}>
 								<span class="timeline__order">{String(entry.data.order).padStart(2, '0')}</span>
 								<span class="timeline__title">{entry.data.title}</span>
 							</a>
@@ -79,7 +79,7 @@ const firstSlideSlug = slides[0]?.slug ?? '';
 							<slide.Content />
 						</div>
 						<div class="slide-card__footer">
-							<a class="slide-card__link" href={`/slides/${slide.slug}`}>
+							<a class="slide-card__link" href={`slides/${slide.slug}`}>
 								View slide →
 							</a>
 						</div>
