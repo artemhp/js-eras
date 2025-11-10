@@ -38,7 +38,7 @@ Interfaces became structured, consistent, and scalable.
 - Chrome or Safari Remote Debugging for Android  
 - React DevTools  
 - Vue.js devtools  
-- ESLint + shared snippet packs  
+- ESLint  
 
 ### Infrastructure
 - GraphQL  
