@@ -11,7 +11,7 @@ Collaboration and community-driven ideas replaced isolated experimentation.
 - Dojo Toolkit  
 - YUI (Yahoo UI Library)  
 - Ext JS  
-- Polyfills  
+- Polyfills (HTML5 shims, CSS hacks)  
 - Ruby on Rails  
 
 ### Browsers & Engines
