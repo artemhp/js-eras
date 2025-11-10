@@ -1,3 +1,9 @@
+---
+title: "History Quotes"
+order: 15
+category: "interlude"
+---
+
 ## History Quotes
 
 - “Those who cannot remember the past are condemned to repeat it.” — George Santayana  

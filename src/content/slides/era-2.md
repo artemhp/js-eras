@@ -1,3 +1,9 @@
+---
+title: "Era 2 — The Revolutionary War (2003–2008)"
+order: 6
+category: "era"
+---
+
 ## Era 2 — The Revolutionary War (2003–2008)
 
 When developers began uniting around shared practices and standards.  
@@ -50,9 +56,9 @@ Collaboration and community-driven ideas replaced isolated experimentation.
 - Progressive Enhancement  
 
 ### Influencers
-- John Resig (jQuery)  
-- Alex Russell (Dojo, Web Components)  
-- David Heinemeier Hansson (Ruby on Rails)  
-- Nicholas Zakas (Yahoo! Performance)  
-- Thomas Sha & Nate Koechley (Yahoo! Front-End)  
-- Douglas Crockford (JSON, JavaScript)  
+- John Resig  
+- Alex Russell  
+- David Heinemeier Hansson  
+- Nicholas Zakas  
+- Thomas Sha & Nate Koechley  
+- Douglas Crockford  

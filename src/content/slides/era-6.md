@@ -1,3 +1,9 @@
+---
+title: "Era 6 — The AI Age (2025–Future)"
+order: 14
+category: "era"
+---
+
 ## Era 6 — The AI Age (2025–Future)
 
 When intelligence becomes a core part of how digital products are created.  
@@ -40,7 +46,7 @@ Developers collaborate with AI to build, test, and design in entirely new ways.
 - Focus on Architecture & Product  
 
 ### Influencers
-- Sam Altman (OpenAI)  
-- Demis Hassabis (Google DeepMind)  
-- Jensen Huang (NVIDIA)  
-- Aidan Gomez (Cohere)  
+- Sam Altman  
+- Demis Hassabis  
+- Jensen Huang  
+- Aidan Gomez  

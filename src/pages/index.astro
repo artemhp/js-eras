@@ -1,0 +1,343 @@
+---
+import Layout from '../layouts/Layout.astro';
+import type { CollectionEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
+
+type SlideEntry = CollectionEntry<'slides'>;
+type RenderedSlide = SlideEntry & Awaited<ReturnType<SlideEntry['render']>>;
+
+const slides: RenderedSlide[] = await Promise.all(
+	(
+		await getCollection('slides')
+	)
+		.sort((a, b) => a.data.order - b.data.order)
+		.map(async (entry) => {
+			const rendered = await entry.render();
+			return {
+				...entry,
+				...rendered
+			};
+		})
+);
+
+const navItems = slides.filter((slide) => slide.data.category !== 'bonus');
+const eraTitles = slides.filter((slide) => slide.data.category === 'era').map((slide) => slide.data.title);
+const firstSlideSlug = slides[0]?.slug ?? '';
+---
+
+<Layout>
+	<main class="shell">
+		<section class="hero">
+			<p class="hero__eyebrow">Live talk · PhillyJS Club · Artem Deikun</p>
+			<h1>JavaScript Through the Ages</h1>
+			<p class="hero__lede">
+				A guided journey from handwritten HTML to AI-generated UI. Explore how every era of front-end development
+				set the stage for the next—and why the AI age is more evolution than disruption.
+			</p>
+			<div class="hero__actions">
+				{firstSlideSlug && (
+					<a class="hero__button" href={`/slides/${firstSlideSlug}`}>
+						Start presentation
+					</a>
+				)}
+				<a class="hero__link" href="#timeline">Skip to timeline ↓</a>
+			</div>
+			<div class="hero__eras" aria-label="Timeline checkpoints">
+				{eraTitles.map((title) => (
+					<span class="hero__chip">{title.replace(' —', ':')}</span>
+				))}
+			</div>
+		</section>
+
+			<section class="presentation" id="timeline">
+				<nav class="timeline" aria-label="Presentation timeline">
+				<h2>Timeline</h2>
+				<ol>
+					{navItems.map((entry) => (
+						<li>
+							<a href={`#${entry.slug}`} class={`timeline__link timeline__link--${entry.data.category}`}>
+								<span class="timeline__order">{String(entry.data.order).padStart(2, '0')}</span>
+								<span class="timeline__title">{entry.data.title}</span>
+							</a>
+						</li>
+					))}
+				</ol>
+			</nav>
+
+			<div class="slides">
+				{slides.map((slide) => (
+					<article
+						id={slide.slug}
+						class={`slide-card slide-card--${slide.data.category}`}
+						aria-labelledby={`${slide.slug}-label`}
+					>
+						<div class="slide-card__meta">
+							<span class="slide-card__badge">{slide.data.category}</span>
+							<span class="slide-card__order">{String(slide.data.order).padStart(2, '0')}</span>
+						</div>
+						<div class="slide-card__body">
+							<slide.Content />
+						</div>
+						{slide.data.tags && slide.data.tags.length > 0 && (
+							<div class="slide-card__tags" aria-label="Suggested tags">
+								{slide.data.tags.map((tag) => (
+									<span class="slide-card__tag">#{tag}</span>
+								))}
+							</div>
+						)}
+					</article>
+				))}
+			</div>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	.shell {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 3rem clamp(1rem, 3vw, 2.5rem) 4rem;
+		display: flex;
+		flex-direction: column;
+		gap: 2.5rem;
+	}
+
+	.hero {
+		background: linear-gradient(135deg, rgba(37, 99, 235, 0.08), rgba(236, 72, 153, 0.08));
+		border: 1px solid var(--color-border);
+		border-radius: 1.5rem;
+		padding: clamp(1.5rem, 6vw, 3rem);
+		backdrop-filter: blur(12px);
+		box-shadow: 0 20px 60px rgba(15, 23, 42, 0.1);
+	}
+
+	.hero__eyebrow {
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+		font-size: 0.75rem;
+		color: var(--color-subtle);
+		margin-bottom: 1rem;
+	}
+
+	.hero h1 {
+		font-family: var(--font-display);
+		font-size: clamp(2.4rem, 6vw, 3.8rem);
+		letter-spacing: -0.03em;
+		margin: 0 0 1rem;
+	}
+
+	.hero__lede {
+		font-size: 1.05rem;
+		color: rgba(248, 251, 255, 0.9);
+		max-width: 60ch;
+		margin-bottom: 1.5rem;
+	}
+
+	.hero__actions {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.75rem;
+		align-items: center;
+		margin-bottom: 1.5rem;
+	}
+
+	.hero__button {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0.8rem 1.6rem;
+		border-radius: 999px;
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		background: linear-gradient(120deg, rgba(146, 255, 246, 0.4), rgba(255, 110, 199, 0.4));
+		font-family: var(--font-display);
+		font-size: 0.95rem;
+	}
+
+	.hero__link {
+		font-size: 0.9rem;
+		color: var(--color-primary);
+	}
+
+	.hero__eras {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+	}
+
+	.hero__chip {
+		font-size: 0.85rem;
+		padding: 0.25rem 0.65rem;
+		border-radius: 999px;
+		background: var(--color-surface);
+		border: 1px solid var(--color-border);
+		color: var(--color-subtle);
+	}
+
+	.presentation {
+		display: grid;
+		grid-template-columns: minmax(220px, 260px) 1fr;
+		gap: clamp(1.5rem, 4vw, 2.5rem);
+		align-items: start;
+	}
+
+	.timeline {
+		position: sticky;
+		top: 1.5rem;
+		border: 1px solid var(--color-border);
+		padding: 1.5rem;
+		border-radius: 1.25rem;
+		background: rgba(255, 255, 255, 0.95);
+		backdrop-filter: blur(8px);
+		box-shadow: 0 14px 34px rgba(15, 23, 42, 0.12);
+		max-height: calc(100vh - 3rem);
+		overflow: auto;
+	}
+
+	.timeline h2 {
+		margin-top: 0;
+		font-size: 1rem;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: var(--color-subtle);
+	}
+
+	.timeline ol {
+		list-style: none;
+		margin: 1rem 0 0;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 0.35rem;
+	}
+
+	.timeline__link {
+		display: grid;
+		grid-template-columns: auto 1fr;
+		gap: 0.85rem;
+		align-items: baseline;
+		padding: 0.65rem 0.75rem;
+		border-radius: 0.75rem;
+		color: var(--color-subtle);
+		background: transparent;
+		border: 1px solid transparent;
+		transition: border 0.2s ease, background 0.2s ease, color 0.2s ease;
+		font-size: 0.9rem;
+	}
+
+	.timeline__link:hover {
+		color: var(--color-text);
+		border-color: rgba(146, 255, 246, 0.4);
+		background: rgba(255, 255, 255, 0.05);
+	}
+
+	.timeline__order {
+		font-size: 0.8rem;
+		font-weight: 600;
+		color: var(--color-subtle);
+	}
+
+	.timeline__link--era .timeline__order {
+		color: var(--color-primary);
+	}
+
+	.timeline__link--transition .timeline__order {
+		color: var(--color-accent);
+	}
+
+	.timeline__link--conclusion .timeline__order,
+	.timeline__link--interlude .timeline__order {
+		color: #ffd580;
+	}
+
+	.slides {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	.slide-card {
+		border-radius: 1.5rem;
+		border: 1px solid var(--color-border);
+		background: var(--color-surface);
+		box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+		padding: clamp(1rem, 3vw, 1.75rem);
+	}
+
+	.slide-card__meta {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 0.85rem;
+		text-transform: uppercase;
+		letter-spacing: 0.15em;
+		color: var(--color-subtle);
+		margin-bottom: 1rem;
+	}
+
+	.slide-card__badge {
+		background: var(--color-surface-alt);
+		padding: 0.25rem 0.75rem;
+		border-radius: 999px;
+		border: 1px solid var(--color-border);
+	}
+
+	.slide-card__body :global(*:first-child) {
+		margin-top: 0;
+	}
+
+	.slide-card__body :global(h1),
+	.slide-card__body :global(h2),
+	.slide-card__body :global(h3) {
+		font-family: var(--font-display);
+		letter-spacing: -0.01em;
+	}
+
+	.slide-card__body :global(ul) {
+		padding-left: 1.15rem;
+	}
+
+	.slide-card__tags {
+		margin-top: 1.25rem;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.35rem;
+	}
+
+	.slide-card__tag {
+		font-size: 0.75rem;
+		background: rgba(37, 99, 235, 0.12);
+		border: 1px solid rgba(37, 99, 235, 0.2);
+		color: var(--color-primary);
+		border-radius: 999px;
+		padding: 0.2rem 0.6rem;
+	}
+
+	.slide-card--transition {
+		background: var(--color-surface-alt);
+		border-color: rgba(236, 72, 153, 0.25);
+	}
+
+	.slide-card--interlude {
+		border-style: dashed;
+	}
+
+	.slide-card--bonus {
+		background: var(--color-surface-alt);
+	}
+
+	@media (max-width: 960px) {
+		.presentation {
+			grid-template-columns: 1fr;
+		}
+
+		.timeline {
+			position: static;
+			max-height: none;
+		}
+	}
+	@media (max-width: 640px) {
+		.hero__eras {
+			flex-direction: column;
+		}
+	}
+</style>

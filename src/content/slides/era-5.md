@@ -1,3 +1,9 @@
+---
+title: "Era 5 — The Progressive Era (2019–2024)"
+order: 12
+category: "era"
+---
+
 ## Era 5 — The Progressive Era (2019–2024)
 
 When front-end boundaries began to blur and developers took ownership across full-stack and performance.
@@ -10,7 +16,7 @@ When front-end boundaries began to blur and developers took ownership across ful
 - Svelte  
 - Astro  
 - WebAssembly (Wasm)  
-- JS Tooling in Native (Rust, Go, Zig)  
+- JS Tooling in Native (Rust, Go)  
 - Deno  
 - Tailwind CSS  
 - Design tokens + Storybook  
@@ -19,9 +25,9 @@ When front-end boundaries began to blur and developers took ownership across ful
 ### Browsers & Engines
 - Chromium dominance  
 - Firefox Quantum / Servo experiments  
-- Safari WebKit (Performance and PWA upgrades)  
+- Safari WebKit (PWA)  
 - Arc / Brave / Vivaldi  
-- Mobile parity: WebView = full engine  
+- Mobile parity  
 
 ### Tooling & IDEs
 - Visual Studio Code  
@@ -29,28 +35,22 @@ When front-end boundaries began to blur and developers took ownership across ful
 - Live Share  
 - GitHub Copilot  
 - ChatGPT integrations  
-- Cursor AI IDE  
+- Prettier  
 
 ### DevTools & Debugging
 - React DevTools  
 - Redux DevTools  
 - Vue DevTools  
 - Svelte Inspector  
-- Playwright  
-- Cypress  
-- Prettier  
+- Playwright, Cypress  
 
 ### Infrastructure
 - Vite  
 - Serverless / Edge computing  
-- Monorepo Tooling (e.g., Turborepo, Nx)  
+- Monorepo Tooling  
 - Kubernetes  
-- GitHub Actions  
-- GitLab CI  
-- Sentry  
-- LogRocket  
-- Datadog RUM  
-- SWC/ESBuild tree shaking baked into dev servers  
+- GitHub Actions, GitLab CI  
+- Sentry, LogRocket, Datadog RUM  
 
 ### Culture & Workflow
 - Meta-Frameworks  
@@ -61,6 +61,6 @@ When front-end boundaries began to blur and developers took ownership across ful
 - One codebase spans web, mobile, and TV surfaces  
 
 ### Influencers
-- Rich Harris (Svelte)  
-- Guillermo Rauch (Vercel, Next.js)  
-- Fred K. Schott (Astro)  
+- Rich Harris  
+- Guillermo Rauch  
+- Fred K. Schott  

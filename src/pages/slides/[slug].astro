@@ -1,0 +1,275 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import type { CollectionEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
+
+type SlideEntry = CollectionEntry<'slides'>;
+
+export async function getStaticPaths() {
+	const slides = (await getCollection('slides')).sort((a, b) => a.data.order - b.data.order);
+
+	return slides.map((slide, index) => ({
+		params: { slug: slide.slug },
+		props: {
+			slide,
+			index: index + 1,
+			total: slides.length,
+			nextSlug: slides[index + 1]?.slug ?? null,
+			prevSlug: slides[index - 1]?.slug ?? null
+		}
+	}));
+}
+
+const { slide, index, total, nextSlug, prevSlug } = Astro.props;
+const { Content } = await slide.render();
+const nextHref = nextSlug ? `/slides/${nextSlug}` : null;
+const prevHref = prevSlug ? `/slides/${prevSlug}` : null;
+const presentationTitle = 'JavaScript Through the Ages';
+const isEraSlide = slide.data.category === 'era';
+---
+
+<Layout title={`${slide.data.title} — ${presentationTitle}`}>
+	<main class="slide-shell" data-slug={slide.slug} data-next={nextHref ?? ''} data-prev={prevHref ?? ''}>
+		<header class="slide-bar">
+			<div class="slide-bar__meta">
+				<p class="slide-bar__eyebrow">{presentationTitle} · Artem Deikun</p>
+				<h1>{slide.data.title}</h1>
+			</div>
+			<div class="slide-bar__status">
+				<span class="slide-bar__category">{slide.data.category}</span>
+				<span class="slide-bar__counter">
+					{index}/{total}
+				</span>
+			</div>
+		</header>
+
+		<article class={`slide-view slide-view--${slide.data.category}`} id="slide">
+			<Content />
+		</article>
+
+		</main>
+
+	<script is:inline>
+		const shell = document.querySelector('.slide-shell');
+		const navTargets = {
+			next: shell?.dataset.next || null,
+			prev: shell?.dataset.prev || null
+		};
+
+		function goTo(link) {
+			if (!link) return;
+			window.location.href = link;
+		}
+
+		document.addEventListener('keydown', (event) => {
+			const key = event.key;
+			if (key === 'Enter' || key === ' ' || key === 'Spacebar' || key === 'ArrowRight') {
+				event.preventDefault();
+				goTo(navTargets.next);
+			} else if (key === 'ArrowLeft' || key === 'Backspace') {
+				event.preventDefault();
+				goTo(navTargets.prev);
+			}
+		});
+	</script>
+
+	{isEraSlide && (
+		<script is:inline>
+			(function () {
+				const slide = document.getElementById('slide');
+				const shell = document.querySelector('.slide-shell');
+				const slug = shell?.dataset.slug ?? '';
+				if (!slide) return;
+
+				const firstHeading = slide.querySelector(':scope > h1, :scope > h2');
+				if (firstHeading) firstHeading.remove();
+
+				const children = Array.from(slide.children);
+				let removedParas = 0;
+				for (const child of children) {
+					if (child.tagName === 'P' && removedParas < 2) {
+						child.remove();
+						removedParas += 1;
+					}
+				}
+
+				const headings = Array.from(slide.querySelectorAll('h3'));
+				if (!headings.length) return;
+
+				const grid = document.createElement('div');
+				grid.className = 'era-panels';
+				const insertionTarget = headings[0];
+				insertionTarget.parentNode.insertBefore(grid, insertionTarget);
+
+				headings.forEach((heading) => {
+					let list = heading.nextElementSibling;
+					while (list && list.tagName !== 'UL') {
+						list = list.nextElementSibling;
+					}
+					const panel = document.createElement('section');
+					panel.className = 'era-panel';
+					const headingText = heading.textContent?.trim().toLowerCase() ?? '';
+					panel.appendChild(heading);
+					if (list && list.tagName === 'UL') {
+						panel.appendChild(list);
+					}
+					grid.appendChild(panel);
+				});
+			})();
+		</script>
+	)}
+</Layout>
+
+<style>
+	.slide-shell {
+		--slide-content-pad: clamp(1rem, 3vw, 1.75rem);
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		padding: clamp(0.75rem, 3vw, 1.5rem);
+		gap: 0.75rem;
+	}
+
+	.slide-bar {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		gap: 0.75rem;
+		padding: 0.25rem var(--slide-content-pad) 0;
+	}
+
+	.slide-bar__meta h1 {
+		margin: 0.25rem 0 0;
+		font-size: clamp(1.5rem, 4vw, 2rem);
+		font-family: var(--font-display);
+	}
+
+	.slide-bar__eyebrow {
+		text-transform: uppercase;
+		letter-spacing: 0.18em;
+		font-size: 0.75rem;
+		color: var(--color-subtle);
+		margin: 0;
+	}
+
+	.slide-bar__status {
+		text-align: right;
+		font-family: var(--font-display);
+	}
+
+	.slide-bar__category {
+		display: block;
+		font-size: 0.8rem;
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+		color: var(--color-subtle);
+	}
+
+	.slide-bar__counter {
+		font-size: 1.2rem;
+		color: var(--color-primary);
+	}
+
+	.slide-view {
+		flex: 1;
+		background: transparent;
+		border: none;
+		border-radius: 0;
+		padding: clamp(0.5rem, 2vw, 1rem) var(--slide-content-pad) clamp(0.75rem, 2vw, 1.25rem);
+		box-shadow: none;
+		overflow-y: auto;
+	}
+
+	.slide-view :global(*:first-child) {
+		margin-top: 0;
+	}
+
+	.slide-view :global(h1),
+	.slide-view :global(h2),
+	.slide-view :global(h3) {
+		font-family: var(--font-display);
+	}
+
+	.slide-view--transition {
+		background: transparent;
+	}
+
+	.slide-view--interlude {
+		box-shadow: none;
+	}
+
+	.slide-view--era :global(.era-panels) {
+		column-width: 260px;
+		column-gap: 1.25rem;
+		margin-top: 0.75rem;
+	}
+
+	.slide-view--era :global(.era-panel) {
+		background: #fff;
+		border: 1px solid rgba(15, 23, 42, 0.12);
+		border-radius: 0.75rem;
+		padding: 0.75rem 1rem;
+		box-shadow: none;
+		display: flex;
+		flex-direction: column;
+		gap: 0.35rem;
+		break-inside: avoid;
+		margin-bottom: 1rem;
+	}
+
+	.slide-view--era :global(.era-panel--wide) {
+		width: 100%;
+	}
+
+	.slide-view--era :global(.era-panel h3) {
+		margin-top: 0;
+		font-size: 1rem;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		color: var(--color-primary);
+		background: rgba(37, 99, 235, 0.08);
+		padding: 0.3rem 0.6rem;
+		border-radius: 0.5rem;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		margin: 0 0 0.35rem;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.slide-view--era :global(.era-panel ul) {
+		margin-bottom: 0;
+		padding: 0;
+		text-align: center;
+	}
+
+	.slide-view :global(ul) {
+		list-style: none;
+		padding: 0;
+		margin: 0 0 1rem;
+		text-align: center;
+	}
+
+	.slide-view :global(li) {
+		font-size: 0.9rem;
+		padding: 0.18rem 0;
+		border-radius: 0;
+		line-height: 1.35;
+	}
+
+	@media (max-width: 720px) {
+		.slide-bar {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		.slide-bar__status {
+			text-align: left;
+		}
+
+		.slide-view--era :global(.era-panels) {
+			column-width: auto;
+		}
+	}
+</style>

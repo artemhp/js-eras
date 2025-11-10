@@ -1,3 +1,9 @@
+---
+title: "Era 1 — The Wild Wild West of the Web (1997–2003)"
+order: 4
+category: "era"
+---
+
 ## Era 1 — The Wild Wild West of the Web (1997–2003)
 
 When the web tried to become dynamic, but everyone built it their own way.  
@@ -32,21 +38,21 @@ Innovation moved fast, standards were unclear, and every site had its own rules 
 
 ### Infrastructure
 - Apache HTTP Server  
-- Microsoft IIS + FrontPage Extensions  
+- Microsoft IIS  
 - FTP deployment  
 
 ### Culture & Workflow
 - Hand-coded HTML in Notepad  
 - Table-based layouts  
 - Flash intros and GIF banners  
-- “Best viewed in Internet Explorer” badges  
+- Best in IE badges  
 - Manual cross-browser testing  
 
 ### Influencers
-- Brendan Eich (JavaScript, Mozilla)  
-- Douglas Crockford (JSON, Yahoo!)  
-- Tim Berners-Lee (W3C, World Wide Web)  
-- Bill Gates (Microsoft)  
-- Bert Bos (CSS, W3C)  
-- Jeffrey Zeldman (Web Standards Project)  
-- Dave Shea (CSS Zen Garden)  
+- Brendan Eich  
+- Douglas Crockford  
+- Tim Berners-Lee  
+- Bill Gates  
+- Bert Bos  
+- Jeffrey Zeldman  
+- Dave Shea  

@@ -1,3 +1,9 @@
+---
+title: "Era 4 — The Atomic Age (2013–2018)"
+order: 10
+category: "era"
+---
+
 ## Era 4 — The Atomic Age (2013–2018)
 
 When modular thinking and reusable design became the foundation of the modern web.  
@@ -13,10 +19,10 @@ Interfaces became structured, consistent, and scalable.
 - React Native & NativeScript  
 - Polymer  
 - Material Design  
+- Electron  
 - WebAssembly  
 - Flow  
-- CSS-in-JS  
-- PostCSS  
+- CSS-in-JS, PostCSS  
 - Autoprefixer  
 
 ### Browsers & Engines
@@ -35,31 +41,28 @@ Interfaces became structured, consistent, and scalable.
 ### DevTools & Debugging
 - Chrome DevTools  
 - Google Lighthouse  
-- Chrome or Safari Remote Debugging for Android  
+- Browser Remote Debugging  
 - React DevTools  
 - Vue.js devtools  
 - ESLint  
+
+### Culture & Workflow
+- Component-Based Architecture  
+- State Management  
+- Declarative Programming  
+- Pair Programming  
+
+### Influencers
+- Dan Abramov  
+- Jordan Walke  
+- Evan You  
 
 ### Infrastructure
 - GraphQL  
 - Serverless Framework  
 - Docker  
-- Netlify  
-- Vercel  
+- Netlify & Vercel  
 - AWS Lambda  
 - Jenkins 2.x (Pipelines as Code)  
-- Yarn  
-- Lerna  
-- webpack tree shaking + Rollup bundling  
-
-### Culture & Workflow
-- Component-Based Architecture  
-- State Management (e.g., Flux/Redux, Vuex)  
-- Declarative Programming  
-- Pair Programming  
-- Web tech powers native shells on mobile and living-room screens  
-
-### Influencers
-- Dan Abramov (Redux, React)  
-- Jordan Walke (React)  
-- Evan You (Vue.js)  
+- Yarn, Lerna  
+- Rollup bundling  

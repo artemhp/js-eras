@@ -2,6 +2,8 @@
 title: "Upcoming Talk: JavaScript Through the Ages at PhillyJS!"
 date: "2025-11-13" # Assuming today is Nov 9, 2025, Thursday would be Nov 13.
 tags: ["JavaScript", "Frontend", "AI", "WebDevelopment", "PhillyJS", "TechTalk"]
+order: 17
+category: "bonus"
 ---
 
 📢 Glad to share that this Thursday, November 13th, I'll be speaking at the PhillyJS Club in Philadelphia!

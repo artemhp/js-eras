@@ -1,3 +1,9 @@
+---
+title: "Introduction"
+order: 1
+category: "introduction"
+---
+
 # New Introduction Draft
 
 **Slide 1 – Hook (room photo + PhillyJS logo)**
