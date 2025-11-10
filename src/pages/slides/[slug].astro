@@ -105,25 +105,28 @@ const isEraSlide = slide.data.category === 'era';
 				const headings = Array.from(slide.querySelectorAll('h3'));
 				if (!headings.length) return;
 
-				const grid = document.createElement('div');
-				grid.className = 'era-panels';
-				const insertionTarget = headings[0];
-				insertionTarget.parentNode.insertBefore(grid, insertionTarget);
+		const grid = document.createElement('div');
+		grid.className = 'era-panels';
+		const insertionTarget = headings[0];
+		insertionTarget.parentNode.insertBefore(grid, insertionTarget);
 
-				headings.forEach((heading) => {
-					let list = heading.nextElementSibling;
-					while (list && list.tagName !== 'UL') {
-						list = list.nextElementSibling;
-					}
-					const panel = document.createElement('section');
-					panel.className = 'era-panel';
-					const headingText = heading.textContent?.trim().toLowerCase() ?? '';
-					panel.appendChild(heading);
-					if (list && list.tagName === 'UL') {
-						panel.appendChild(list);
-					}
-					grid.appendChild(panel);
-				});
+		headings.forEach((heading) => {
+			let list = heading.nextElementSibling;
+			while (list && list.tagName !== 'UL') {
+				list = list.nextElementSibling;
+			}
+			const panel = document.createElement('section');
+			panel.className = 'era-panel';
+			const headingText = heading.textContent?.trim().toLowerCase() ?? '';
+			if (headingText.includes('culture') && slug === 'era-4') {
+				panel.classList.add('era-panel--wide');
+			}
+			panel.appendChild(heading);
+			if (list && list.tagName === 'UL') {
+				panel.appendChild(list);
+			}
+			grid.appendChild(panel);
+		});
 			})();
 		</script>
 	)}
@@ -208,10 +211,8 @@ const isEraSlide = slide.data.category === 'era';
 	}
 
 	.slide-view--era :global(.era-panels) {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-		grid-auto-flow: row dense;
-		gap: 1rem;
+		column-width: min(320px, 45%);
+		column-gap: 1.25rem;
 		margin-top: 0.75rem;
 	}
 
@@ -224,12 +225,12 @@ const isEraSlide = slide.data.category === 'era';
 		display: flex;
 		flex-direction: column;
 		gap: 0.35rem;
-		align-self: flex-start;
-		height: auto;
+		break-inside: avoid;
+		margin-bottom: 1rem;
 	}
 
 	.slide-view--era :global(.era-panel--wide) {
-		grid-column: span 2;
+		column-span: all;
 	}
 
 	.slide-view--era :global(.era-panel h3) {
@@ -280,11 +281,8 @@ const isEraSlide = slide.data.category === 'era';
 		}
 
 		.slide-view--era :global(.era-panels) {
-			grid-template-columns: 1fr;
-		}
-
-		.slide-view--era :global(.era-panel--wide) {
-			grid-column: span 1;
+			column-width: 100%;
+			column-count: 1;
 		}
 	}
 </style>
